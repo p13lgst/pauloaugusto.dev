@@ -1,6 +1,6 @@
 import Button from './Button';
 import styles from '../styles/Contact.module.sass';
-import { useState } from 'react';
+import { ChangeEvent, ChangeEventHandler, FormEvent, useState } from 'react';
 import { toast } from 'react-toastify';
 
 
@@ -17,7 +17,8 @@ const Contact = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
 
-    const handleChange = (e) => {
+    const handleChange = (e:ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+
         const { id, value } = e.target;
         setValues((values) => ({
             ...values,
@@ -25,7 +26,7 @@ const Contact = () => {
         }));
     }
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
 
@@ -84,8 +85,7 @@ const Contact = () => {
         <div id={styles.contact}>
             <h1 id="contact" className={styles.heading}>Contact</h1>
             <p className={styles.text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            doloremque.
+                If you have any questions, or need to get in touch, please fill out the form below and I will get back to you as soon as possible.
             </p>
 
             <form onSubmit={handleSubmit} className={styles.form}>

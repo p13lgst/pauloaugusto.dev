@@ -1,8 +1,9 @@
 import '../styles/globals.css'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css';
+import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Component {...pageProps} />
@@ -13,5 +14,3 @@ function MyApp({ Component, pageProps }) {
     </>
   )
 }
-
-export default MyApp

@@ -21,7 +21,6 @@ h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
-    text-shadow: 0.2rem 0.2rem 7rem #050024;
     line-height: 1.5;
 }
 
@@ -29,6 +28,5 @@ h2 {
     font-size: 1rem;
     font-weight: normal;
     margin: 0 0 5px;
-    text-shadow: 0.2rem 0.2rem 7rem #050024;
     line-height: 1.5;
 }

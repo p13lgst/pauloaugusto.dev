@@ -7,7 +7,7 @@ const Greeting = () => {
 
     const onContactClick = () => {
         const contactForm = document.getElementById('contact');
-        contactForm.scrollIntoView({ behavior: 'smooth' });
+        contactForm?.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (

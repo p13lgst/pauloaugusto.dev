@@ -1,12 +1,13 @@
-import db from "../../lib/db";
-import Message from "../../models/Message";
+import connectDB from "utils/db";
+import Message from "models/Message";
+import { NextApiRequest, NextApiResponse } from "next";
 
 
-export default async function handler(req, res) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const { firstName, lastName, email, message } = req.body;
     
-    await db();
+    await connectDB();
 
     Message.create({ firstName, lastName, email, message }, (err) => {
       if (err) {
@@ -16,6 +17,6 @@ export default async function handler(req, res) {
       }
     });
   } else {
-    res.redirect(301, '/');
+    res.status(404).send('Not found');
   }
 }

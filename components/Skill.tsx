@@ -1,6 +1,15 @@
 import styles from '../styles/Skill.module.sass';
 
-const SkillBar = ({ level }) => {
+interface SkillProps {
+    name: string;
+    level: number;
+}
+
+interface SkillBarProps {
+    level: number;
+}
+
+const SkillBar = ({ level }: SkillBarProps) => {
     const width = `${level}%`;
     return (
         <div className={styles.bar}>
@@ -9,7 +18,7 @@ const SkillBar = ({ level }) => {
     );
 };
 
-const Skill = ({ name, level }) => {
+const Skill = ({ name, level }: SkillProps) => {
     return (
         <div className={styles.skill}>
         <div className={styles.name}>{name}</div>

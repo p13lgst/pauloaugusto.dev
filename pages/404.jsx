@@ -1,15 +1,14 @@
 import { useEffect } from "react";
-import { useRouter } from "next/router";
+import Router from "next/router";
+
 
 const Custom404 = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.replace("/");
-  });
   
-  return null
-};
+  useEffect(() => {
+    Router.replace("/");
+  });
 
+  return null;
+};
 
 export default Custom404;

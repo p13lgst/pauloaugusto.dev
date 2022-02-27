@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Greeting from '../components/Greeting';
-import About from '../components/About';
-import Skills from '../components/Skills';
-import Contact from '../components/Contact';
-import styles from '../styles/Home.module.sass';
+import Greeting from 'components/Greeting';
+import About from 'components/About';
+import Skills from 'components/Skills';
+import Contact from 'components/Contact';
+import styles from 'styles/Home.module.sass';
 
-function Home() {
+export default function Home() {
 
   return (
     <div className={styles.home}>
@@ -32,7 +32,7 @@ function Home() {
       </Head>
 
       <Greeting />
-      <About /> 
+      <About />
       <Skills />
       <Contact />
 
@@ -42,10 +42,8 @@ function Home() {
         </p>
         <p>
           &copy; 2022
-        </p>  
+        </p>
       </footer>
     </div>
   );
 }
-
-export default Home;
