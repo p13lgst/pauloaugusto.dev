@@ -17,16 +17,18 @@ export default function Home() {
 
         <meta property="og:title" content="Paulo Augsuto Silva" />
         <meta property="og:description" content="I'm Paulo Augusto Silva, a passionate web developer always looking for new challenges and new experiences." />
-        {/* <meta property="og:image" content="https://pauloaugusto.dev/og-image.png" /> */}
         <meta property="og:url" content="https://pauloaugusto.dev" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://pauloaugusto.dev/og-image.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="620" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@p13lgst" />
         <meta name="twitter:creator" content="@p13lgst" />
         <meta name="twitter:title" content="Paulo Augsuto Silva" />
         <meta name="twitter:description" content="I'm Paulo Augusto Silva, a passionate web developer always looking for new challenges and new experiences." />
-        {/* <meta name="twitter:image" content="https://pauloaugusto.dev/og-image.png" /> */}
 
 
       </Head>
