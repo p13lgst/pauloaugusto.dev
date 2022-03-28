@@ -12,6 +12,9 @@ export default function Document() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#050024" />
         <meta name="msapplication-TileColor" content="#050024" />
         <meta name="theme-color" content="#050024" />
+        
+        <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover' />
+
       </Head>
       <body>
         <Main />
