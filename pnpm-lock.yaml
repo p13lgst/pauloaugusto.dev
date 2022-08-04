@@ -7,7 +7,7 @@ specifiers:
   eslint-config-next: ^12.2.4
   mongoose: ^6.5.1
   next: ^12.2.4
-  next-pwa: ^5.5.5
+  next-pwa: '=5.5.4'
   react: ^18.2.0
   react-dom: ^18.2.0
   react-toastify: ^9.0.7
@@ -17,7 +17,7 @@ specifiers:
 dependencies:
   mongoose: 6.5.1
   next: 12.2.4_etbiomfljwut5w7dhcn4uu7ezq
-  next-pwa: 5.5.5_next@12.2.4
+  next-pwa: 5.5.4_next@12.2.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-toastify: 9.0.7_biqbaboplfbrettd7655fr4n2y
@@ -3208,8 +3208,8 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /next-pwa/5.5.5_next@12.2.4:
-    resolution: {integrity: sha512-EdheDzxr3V7piAeW2qAeH0uJW5iouSt7s/Fzz6xuvkmRPgbyqQeRY/3ZOWbhfgbPBuzGjdbBWzVurWJPH8bY5w==}
+  /next-pwa/5.5.4_next@12.2.4:
+    resolution: {integrity: sha512-EgB2MQWGR8oZDzY6US+/D0LOCUhPZYCgeqRVBYDxQWNi0N6XfQOoZPw2COIrg/eMt/rB0M+/mquhAQACs5v4Ag==}
     peerDependencies:
       next: '>=9.0.0'
     dependencies:
