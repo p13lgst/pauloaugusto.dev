@@ -7,3 +7,5 @@ yarn-error.log
 **/public/sw.js.map
 **/workbox-*.js
 **/workbox-*.js.map
+
+.env
