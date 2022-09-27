@@ -1,25 +1,25 @@
 import { sendDiscordMessage } from "lib/discord";
-import { NextApiRequest, NextApiResponse } from "next";
 import contactSchema from "schemas/contact";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+const simpleResponse = (status: number) => new Response(null, { status });
+
+export default async function handler(req: Request) {
   if (req.method !== "POST") {
-    return res.status(405).end();
+    return simpleResponse(405);
   }
-  const parseResult = contactSchema.safeParse(req.body);
+
+  const body = await req.json();
+  const parseResult = contactSchema.safeParse(body);
 
   if (!parseResult.success) {
-    return res.status(422).end();
+    return simpleResponse(422);
   }
 
   try {
     await sendDiscordMessage(parseResult.data);
-    return res.status(200).end();
+    return simpleResponse(200);
   } catch (error) {
-    return res.status(500).end();
+    return simpleResponse(500);
   }
 }
 
