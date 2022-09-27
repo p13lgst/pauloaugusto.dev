@@ -1,32 +1,32 @@
 @import-normalize;
 
 body {
-    margin: 0;
-    font-family: 'Anton', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #fff;
-    background-color: #050024;
-    background-image: url('../public/map.svg');
-    background-repeat: repeat-y;
-    background-position: 40vw -81px;
-    background-size: 180%;
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  background-color: #050024;
+  background-image: url("../public/map.svg");
+  background-repeat: repeat-y;
+  background-position: 40vw -81px;
+  background-size: 180%;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.5;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.5;
 }
 
 h2 {
-    font-size: 1rem;
-    font-weight: normal;
-    margin: 0 0 5px;
-    line-height: 1.5;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0 0 5px;
+  line-height: 1.5;
 }

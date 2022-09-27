@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "../styles/Skills.module.sass";
 import SkillsImage from "../public/skills-image.svg";
+import styles from "../styles/Skills.module.sass";
 import Skill from "./Skill";
 
 const skills = {
